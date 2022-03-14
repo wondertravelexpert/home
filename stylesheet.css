@@ -1,0 +1,72 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+} */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.hl-wrapper {
+  margin-top: 100px;
+  height: 800px;
+  width: 100%;
+  background-color: #b68973;
+  padding-top: 100px;
+  position: relative;
+}
+
+.hl-box {
+  height: 600px;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: -45%;
+  background-color: #1e212d;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+
+.hl-container {
+  padding: 0 30px;
+  color: #faf3e0;
+}
+
+.hl-heading {
+  padding-top: 50px;
+  font-size: 60px;
+}
+
+.hl-image {
+  /* atur posisi gambar */
+  position: absolute;
+  top: 50%;
+  width: 200px;
+
+}
