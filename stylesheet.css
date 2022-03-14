@@ -23,15 +23,17 @@ a {
   margin: 0 auto;
 } */
 
-.float-left {
+.container-left {
   float: left;
+  width: 50%;
 }
 
-.float-right {
+.container-right {
   float: right;
+  width: 50%;
 }
 
-.hl-wrapper {
+.hr-wrapper {
   margin-top: 100px;
   height: 800px;
   width: 100%;
@@ -40,7 +42,7 @@ a {
   position: relative;
 }
 
-.hl-box {
+.hr-box {
   height: 600px;
   width: 90%;
   top: 50%;
@@ -53,20 +55,18 @@ a {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
-.hl-container {
+.hr-container {
   padding: 0 30px;
   color: #faf3e0;
 }
 
-.hl-heading {
+.hr-heading {
   padding-top: 50px;
   font-size: 60px;
 }
 
-.hl-image {
+.hr-image {
   /* atur posisi gambar */
-  position: absolute;
-  top: 50%;
   width: 200px;
 
 }
