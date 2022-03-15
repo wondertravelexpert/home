@@ -1,3 +1,15 @@
+:root {
+  /* Set variables if needed */
+  --color1: #faf3e0;
+  --color2: #eabf9f;
+  --color3: #b68973;
+  --color4: #1e212d;
+  --hr-bg-mask: rgba(234, 191, 159, 0.7);
+  --foto-alam: url("https://i1.wp.com/vanillaskydreaming.com/wp-content/uploads/2016/11/dusunbambu.jpg");
+  --foto-makanan: ;
+  --foto-villa: ;
+}
+
 html, body,
 ul, ol, li,
 h1, h2, h3, h4, h5, h6, p, div {
@@ -17,7 +29,10 @@ a {
   clear: left;
 }
 
-.container {
+making linear gradient
+  linear-gradient(0deg, var(--color2), var(--color2), )
+
+  .container {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
@@ -37,7 +52,9 @@ a {
   margin-top: 100px;
   height: 800px;
   width: 100%;
-  background-color: #b68973;
+  background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
+              var(--foto-alam) no-repeat center center / cover;
+  background-size: cover;
   padding-top: 100px;
   position: relative;
 }
@@ -50,14 +67,14 @@ a {
   position: absolute;
   margin-top: -300px;
   margin-left: -45%;
-  background-color: #1e212d;
+  background: #1e212d;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
 .hr-container {
   padding: 0 30px;
-  color: #faf3e0;
+  color: white;
 }
 
 .hr-heading {
@@ -66,7 +83,6 @@ a {
 }
 
 .hr-image {
-  /* atur posisi gambar */
-  width: 200px;
-
+  width: 100%;
+  position: center;
 }
