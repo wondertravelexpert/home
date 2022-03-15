@@ -30,7 +30,7 @@ header {
   height: 65px;
   width: 100%;
   background-color: #ECE7B4;
-  position :fixed;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
@@ -70,6 +70,7 @@ header {
   font-size: 25px;
   padding: 21px 0;
 }
+
 .dropbtn {
   background-color: #96db5a;
   font-size: 16px;
@@ -86,7 +87,7 @@ header {
   display: none;
   position: fixed;
   background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -101,8 +102,97 @@ header {
   background-color: #3e8e41;
   font-weight: bold;
 }
-.dropdown-content a:hover {background-color: #ffffff}
+
+.dropdown-content a:hover {
+  background-color: #ffffff
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+.footer-wrapper {
+  padding-bottom: 1px;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #faf3e0;
+  text-align: center;
+}
+
+.footer-heading {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #5f5d60;
+}
+
+.footer {
+  float: left;
+  width: 33%;
+}
+
+.footer-icon {
+  position: relative;
+  padding-top: 0px;
+  font-size: 10px;
+}
+
+.footer-logo {
+  padding-top: 20px;
+
+}
+
+.footer-link {
+  padding-top: 38px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #1E212D;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+
+.footer-link a:hover {
+  color: #1E212D;
+}
+
+.footer-link .link-1:before {
+  content: "|  ";
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.footer-sosmed {
+  padding-top: 20px;
+}
+
+.footer-sosmed a {
+  padding-left: 30px;
+  color: #B58973;
+  opacity: 0.6;
+}
+
+.footer-sosmed a:hover {
+  color: black;
+  opacity: 1;
+}
+
+.footer-sosmed ul {
+  padding: 0px 20px;
+}
+
+.footer-heading h4 {
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+}
+
+.footer-bottom {
+  background-color: #1E212D;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.footer-sosmed-icon {
+  width: 40px;
 }
