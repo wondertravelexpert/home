@@ -8,6 +8,18 @@
   .footer-link {
     font-size: 18px;
   }
+  
+  .user{
+        width: 450px;
+        animation-name: slide;
+    }
+
+    @keyframes slide {
+        0%   {right: 0px;}
+        25%  {right: 550px;}
+        50%  {right: 1100px;}
+        100% {right: 1650px;}
+    }
 
 }
 
@@ -29,4 +41,21 @@
   .footer-link {
     font-size: 16px;
   }
+  
+  .container{
+        flex-wrap: wrap;
+    }
+
+    .right-container{
+        width: 100%;
+    }
+
+    .left-container{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .flip-card-inner, .flip-card-front, .flip-card-back{
+        width: 100%;
+    }
 }
