@@ -1,13 +1,14 @@
 :root {
   /* Set variables if needed */
-  --color1: #faf3e0;
-  --color2: #eabf9f;
-  --color3: #b68973;
-  --color4: #1e212d;
+  --color1: rgb(250, 243, 224);
+  --color2: rgb(234, 191, 159);
+  --color3: rgb(182, 137, 115);
+  --color4: rgb(30, 33, 45);
   --hr-bg-mask: rgba(234, 191, 159, 0.7);
-  --foto-alam: url("https://i1.wp.com/vanillaskydreaming.com/wp-content/uploads/2016/11/dusunbambu.jpg");
-  --foto-makanan: ;
-  --foto-villa: ;
+  --foto1: url("./dusunbambu.webp");
+  --foto2: url("./Canting-Restaurant.jpg");
+  --foto3: url("./Gunung-Bromo-Jawa-Timur.webp");
+  --hr-height: 600px;
 }
 
 html, body,
@@ -21,68 +22,117 @@ h1, h2, h3, h4, h5, h6, p, div {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
-/* .clear {
-  clear: left;
-}
-
-making linear gradient
-  linear-gradient(0deg, var(--color2), var(--color2), )
-
-  .container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-} */
-
 .container-left {
+  padding: 100px 70px;
   float: left;
   width: 50%;
+  font-size: 40px;
 }
 
 .container-right {
+  animation: change2 9s infinite;
   float: right;
+  height: 600px;
   width: 50%;
+  overflow: hidden;
+  background: linear-gradient(90deg, 
+                            rgba(30, 33, 45, 1), 
+                            rgba(30, 33, 45, 0.6), 
+                            rgba(30, 33, 45, 0.2), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0),
+                            rgba(30, 33, 45, 0)),
+              var(--foto1) no-repeat center center / cover;
 }
 
 .hr-wrapper {
-  margin-top: 100px;
+  animation: change1 9s infinite;
   height: 800px;
   width: 100%;
   background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
-              var(--foto-alam) no-repeat center center / cover;
+              var(--foto1) no-repeat center center / cover;
   background-size: cover;
   padding-top: 100px;
   position: relative;
 }
 
 .hr-box {
-  height: 600px;
+  height: var(--hr-height);
   width: 90%;
   top: 50%;
   left: 50%;
   position: absolute;
-  margin-top: -300px;
+  margin-top: calc(var(--hr-height)/2*(-1));
   margin-left: -45%;
   background: #1e212d;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  overflow: hidden;
 }
 
 .hr-container {
-  padding: 0 30px;
   color: white;
-}
-
-.hr-heading {
-  padding-top: 50px;
-  font-size: 60px;
+  font-family: Arial;
 }
 
 .hr-image {
-  width: 100%;
-  position: center;
+  height: 100%;
+}
+
+@keyframes change1 {
+  0%, 100% 
+  {
+    background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
+                var(--foto1) no-repeat center center / cover;
+  }
+  33% 
+  {
+    background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
+                var(--foto2) no-repeat center center / cover;
+  }
+  67% 
+  {
+    background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
+                var(--foto3) no-repeat center center / cover;
+  }
+}
+
+@keyframes change2 {
+  0%, 100% 
+  {
+    background: linear-gradient(90deg, 
+                            rgba(30, 33, 45, 1), 
+                            rgba(30, 33, 45, 0.6), 
+                            rgba(30, 33, 45, 0.2), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0),
+                            rgba(30, 33, 45, 0)),
+              var(--foto1) no-repeat center center / cover;
+  }
+  33% 
+  {
+    background: linear-gradient(90deg, 
+                            rgba(30, 33, 45, 1), 
+                            rgba(30, 33, 45, 0.6), 
+                            rgba(30, 33, 45, 0.2), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0),
+                            rgba(30, 33, 45, 0)),
+              var(--foto2) no-repeat center center / cover;
+  }
+  67% 
+  {
+    background: linear-gradient(90deg, 
+                            rgba(30, 33, 45, 1), 
+                            rgba(30, 33, 45, 0.6), 
+                            rgba(30, 33, 45, 0.2), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0),
+                            rgba(30, 33, 45, 0)),
+              var(--foto3) no-repeat center center / cover;
+  }
 }

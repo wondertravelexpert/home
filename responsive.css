@@ -1,9 +1,32 @@
 /* For Tablets */
 @media all and (max-width: 1000px) {
-  
+  .container-left {
+    padding: 10%;
+    font-size: 30px;
+  }
 }
 
 /* For Smartphones */
 @media all and (max-width: 670px) {
+  .container-left, .container-right {
+    height: 100px;
+    width: 100%;
+  }
+
+  .container-left {
+    text-align: center;
+    font-size: 20px;
+  }
   
+  :root {
+    --hr-height: 250px;
+  }
+  
+  .hr-wrapper {
+    height: 400px;
+  }
+  
+  .container-right {
+    height: 0px;
+  }
 }

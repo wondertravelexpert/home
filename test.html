@@ -1,0 +1,158 @@
+<h3>Demo with multiple images</h3>
+<style>
+@-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#cf4a {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+#cf4a img {
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 8s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+</style>
+<div id="cf4a" class="shadow">
+  <img src="/images/Windows%20Logo.jpg" />
+  <img src="/images/Turtle.jpg" />
+  <img src="/images/Rainbow%20Worm.jpg" />
+  <img src="/images/Birdman.jpg" />
+</div>
+
+<div id='mydiv'></div>
+
+#mydiv{ animation: changeBg 1s infinite; width:143px; height:100px; }
+@keyframes changeBg{
+   0%,100%  {background-image: url("https://i.stack.imgur.com/YdrqG.png");}
+   25% {background-image: url("https://i.stack.imgur.com/2wKWi.png");}
+   50% {background-image: url("https://i.stack.imgur.com/HobHO.png");}
+   75% {background-image: url("https://i.stack.imgur.com/3hiHO.png");}
+}
+
+#background{ animation: changeBg 4s infinite; width:143px; height:100px; }
+@keyframes changeBg{
+   0%,100%  {background-image: url("https://i.stack.imgur.com/YdrqG.png");}
+   25% {background-image: url("https://i.stack.imgur.com/2wKWi.png");}
+   50% {background-image: url("https://i.stack.imgur.com/HobHO.png");}
+   75% {background-image: url("https://i.stack.imgur.com/3hiHO.png");}
+}
+
+
+/* icons: https://icons8.com/ */
