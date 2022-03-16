@@ -1,3 +1,12 @@
+:root {
+  /* Set variables if needed */
+  --hr-bg-mask: rgba(234, 191, 159, 0.7);
+  --foto1: url("./assets/dusunbambu.webp");
+  --foto2: url("./assets/Canting-Restaurant.jpg");
+  --foto3: url("./assets/Gunung-Bromo-Jawa-Timur.webp");
+  --hr-height: 600px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -110,7 +119,122 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* /////////////////////////////////////////////////////////////////////// */
 
+.container-left {
+  padding: 100px 70px;
+  float: left;
+  width: 50%;
+  font-size: 40px;
+}
+
+.container-right {
+  animation: change2 9s infinite;
+  float: right;
+  height: 600px;
+  width: 50%;
+  overflow: hidden;
+  background: linear-gradient(90deg, 
+                            rgba(30, 33, 45, 1), 
+                            rgba(30, 33, 45, 0.6), 
+                            rgba(30, 33, 45, 0.2), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0),
+                            rgba(30, 33, 45, 0)),
+              var(--foto1) no-repeat center center / cover;
+}
+
+.hr-wrapper {
+  animation: change1 9s infinite;
+  height: 800px;
+  width: 100%;
+  background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
+              var(--foto1) no-repeat center center / cover;
+  background-size: cover;
+  padding-top: 100px;
+  position: relative;
+}
+
+.hr-box {
+  height: var(--hr-height);
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: calc(var(--hr-height)/2*(-1));
+  margin-left: -45%;
+  background: #1e212d;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+
+.hr-container {
+  color: white;
+  font-family: Arial;
+}
+
+.hr-image {
+  height: 100%;
+}
+
+@keyframes change1 {
+  0%, 100% 
+  {
+    background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
+                var(--foto1) no-repeat center center / cover;
+  }
+  33% 
+  {
+    background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
+                var(--foto2) no-repeat center center / cover;
+  }
+  67% 
+  {
+    background: linear-gradient(0deg, var(--hr-bg-mask), var(--hr-bg-mask)),
+                var(--foto3) no-repeat center center / cover;
+  }
+}
+
+@keyframes change2 {
+  0%, 100% 
+  {
+    background: linear-gradient(90deg, 
+                            rgba(30, 33, 45, 1), 
+                            rgba(30, 33, 45, 0.6), 
+                            rgba(30, 33, 45, 0.2), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0),
+                            rgba(30, 33, 45, 0)),
+              var(--foto1) no-repeat center center / cover;
+  }
+  33% 
+  {
+    background: linear-gradient(90deg, 
+                            rgba(30, 33, 45, 1), 
+                            rgba(30, 33, 45, 0.6), 
+                            rgba(30, 33, 45, 0.2), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0),
+                            rgba(30, 33, 45, 0)),
+              var(--foto2) no-repeat center center / cover;
+  }
+  67% 
+  {
+    background: linear-gradient(90deg, 
+                            rgba(30, 33, 45, 1), 
+                            rgba(30, 33, 45, 0.6), 
+                            rgba(30, 33, 45, 0.2), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0), 
+                            rgba(30, 33, 45, 0),
+                            rgba(30, 33, 45, 0)),
+              var(--foto3) no-repeat center center / cover;
+  }
+}
 
 /* /////////////////////////////////////////////////////////////////////// */
 .footer-wrapper {
