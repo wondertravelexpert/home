@@ -25,27 +25,38 @@ a {
 }
 
 .container {
-  max-width: 20000px;
+  max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.fa {
+/* .fa {
   margin-right: 5px;
+} */
+
+.hamburger-logo {
+  float: right;
+  display: none;
+  height: auto; 
+  width: auto; 
+  max-width: 40px;
+  padding-top: 15px;
 }
 
 header {
   height: 65px;
   width: 100%;
-  background-color: #ECE7B4;
+  background-color: #faf3e0;
   position: fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 170px;
+  height: auto; 
+  width: auto; 
+  max-width: 170px;
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -73,12 +84,12 @@ header {
   font-weight: bold;
 }
 
-.menu-icon {
+/* .menu-icon {
   color: black;
   float: right;
   font-size: 25px;
   padding: 21px 0;
-}
+} */
 
 .dropbtn {
   background-color: #96db5a;
@@ -125,7 +136,7 @@ header {
   padding: 100px 70px;
   float: left;
   width: 50%;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .container-right {
@@ -318,18 +329,92 @@ header {
 }
 
 .footer-sosmed-icon {
-  width: 40px;
+  height: auto; 
+  width: auto;
+  max-width: 40px;
 }
 
 /* /////////////////////////////////////////////////////////////////////// */
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
 
-.container{
+  a {
+  text-decoration: none;
+  }
+*{
+  box-sizing: border-box;
+}
+
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+img {
+  width: 200px;
+  height: 200px;
+  /* text-align: center; */
+}
+
+
+/* START LESSON */
+.lesson-wrapper {
+  height: 520px;
+  width: 100%;
+  padding-bottom: 80px;
+  /* background-color: #fff; */
+  background-color: #096115;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+  background-color: #f7f7f7;
+  height: 350px;
+  /* margin-right: 5px; */
+}
+
+.lesson p{
+  bottom: 10px;
+}
+.lesson-icon {
+  position: relative;
+  /* text-align: center; */
+}
+
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #403f41;
+}
+
+.heading h3 {
+  font-weight: bold;
+}
+  /* /////////////////////////////////////////////////////////////////////// */
+
+.nd-container{
     height: 377px;
-    max-width: 1420;
+    max-width: 1420px;
+    margin: 40px auto;
     display: flex;
 }
 
-.left-container {
+  .left-container {
     background-color: white;
     width: 450px;
     height: 100%;
@@ -345,7 +430,7 @@ header {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
+    
   .left-container .flip-card-inner {
     animation-name: flip;
     animation-direction: alternate-reverse;
@@ -354,28 +439,28 @@ header {
     animation-iteration-count: infinite;
     animation-delay: 5s;
   }
-  
+    
   .flip-card-front, .flip-card-back {
-    position: absolute;
+      position: absolute;
     width: 450px;
     height: 100%;
-    -webkit-backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
+    }
   
   .flip-card-front {
-    background-color: #faf3e0;
+      background-color: #faf3e0;
     border: 5px solid #b68973;
-    border-radius: 20px;
+      border-radius: 20px;
   }
   
-  .flip-card-back {
+    .flip-card-back {
     background-color: #faf3e0;
-    border: 5px solid #b68973;
+      border: 5px solid #b68973;
     transform: rotateY(180deg);
     border-radius: 20px;
   }
-
+  
   .flip-card-back h2{
     margin: 0 auto;
     padding-left: 20px;
@@ -406,7 +491,7 @@ header {
     width: 700px;
 }
 
-.testi-wrapper{
+.testi-wrapper{    
     position: relative;
     width: 100%;
     height: 100%;
@@ -453,7 +538,6 @@ img{
 }
 
 i {
-    color: var(--heading-color);
     font-size: 50px;
     position: absolute;
     top: 0;
@@ -468,7 +552,7 @@ i {
     font-family: var(--heading-color);
     font-weight: 600;
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.685);
+    color: black;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -476,12 +560,11 @@ i {
 
 @keyframes slide {
   0%   {right: 0px;}
-  25%  {right: 720px;}
-  50%  {right: 1440px;}
-  100% {right: 2160px;}
+  25%  {right: 640px;}
+  50%  {right: 1280px;}
+  100% {right: 1920px;}
 }
 
 @keyframes flip {
-
   to {transform: rotateY(180deg);}
 }
